@@ -1,0 +1,43 @@
+.platform-container {
+  display: flex;
+  background: white;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  width: 180px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+  transform: scale(0);
+  transition: opacity, transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__text {
+    margin-left: 8px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  &__visible {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+$platforms: 3;
+
+@for $i from 1 through $platforms {
+  .platform-container:nth-of-type(#{$platforms - $i}) {
+    transition-delay: ($i - 1) * 40ms;
+  }
+}

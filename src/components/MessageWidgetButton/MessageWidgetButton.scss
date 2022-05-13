@@ -1,0 +1,51 @@
+.widget-container {
+  &__text {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__shrinked {
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+    float: right;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+    transition: width 225ms cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+
+    &-content {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__expanded {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    float: right;
+    width: 100%;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  &__icon {
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(240, 240, 240);
+    }
+  }
+}

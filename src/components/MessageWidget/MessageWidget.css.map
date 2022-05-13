@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "MessageWidget.scss"
+    ],
+    "names": [],
+    "file": "MessageWidget.css"
+}
